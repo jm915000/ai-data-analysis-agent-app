@@ -1,0 +1,12 @@
+{
+  "experimentalServices": {
+    "frontend": {
+      "entrypoint": "managed-chatkit/frontend",
+      "routePrefix": "/"
+    },
+    "backend": {
+      "entrypoint": "managed-chatkit/backend/app/main.py",
+      "routePrefix": "/api"
+    }
+  }
+}
