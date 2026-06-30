@@ -2,22 +2,14 @@
     "services": {
         "frontend": {
             "root": "managed-chatkit/frontend",
-            "framework": "vite"
+            "framework": "vite",
+            "routePrefix": "/"
         },
         "backend": {
             "root": "managed-chatkit/backend",
             "runtime": "python",
-            "entrypoint": "main.py"
+            "entrypoint": "main.py",
+            "routePrefix": "/api"
         }
-    },
-    "rewrites": [
-        {
-            "source": "/api(/.*)?",
-            "destination": { "type": "service", "service": "backend" }
-        },
-        {
-            "source": "/(.*)",
-            "destination": { "type": "service", "service": "frontend" }
-        }
-    ]
+    }
 }
