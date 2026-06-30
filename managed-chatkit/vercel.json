@@ -11,5 +11,11 @@
       "entrypoint": "app/main.py",
       "routePrefix": "/api"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
