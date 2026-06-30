@@ -1,8 +1,1 @@
-{
-    "services": {
-        "app": {
-            "root": "managed-chatkit",
-            "framework": "nextjs"
-        }
-    }
-}
+{}
